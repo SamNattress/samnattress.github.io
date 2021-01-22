@@ -104,17 +104,17 @@ content:
         title: University of Cambridge
         caption: 2008 - 2012
         sub_title: BA French and Italian
-        quote: >
-          The place where I learnt to read and write. 
+        # quote: >
+          # The place where I learnt to read and write. 
         description: | # this will include new lines to allow paragraphs
-          When I think back on my time at Cambridge with the perspective of almost 10 years, I realise that the most important things I learnt had little to do with language: how to listen to the slowest speakers, who quietly opened my eyes; how to study what I loved, and leave the rest in the libraby; the joy of trying to condense a greater thinker's entire opus into a 2000 word essay; the satisfaction of finding resonance in poetry other people write off as "not as good as Baudelaire"; and how the most interesting conversations often come from music students, whose job it is listen very carefully and produce something beautiful. 
+          When I think back on my time at Cambridge, I realise that the languages I studied have little to do with the most important things I learnt there: how to listen to the slowest speakers, who quietly opened my eyes; how to study what I loved, and leave the rest in the library; the joy of trying to condense a greater thinker's entire opus into a 2000 word essay; the satisfaction of finding resonance in poetry other people write off as "not as good as Baudelaire"; and how the most interesting conversations often come from music students, whose job it is listen very carefully to everything and then try to produce something beautiful. 
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
       When I'm not writing, I might be:
       - Rock climbing
       - Volunteering at the dog shelter or fostering a homeless pup
-      - Reading
+      - Reading (the diet to writing's exercise)
       - Learning how to build things like this website
       
 # Footer

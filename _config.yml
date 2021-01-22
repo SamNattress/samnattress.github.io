@@ -61,8 +61,8 @@ content:
     content:
       - layout: top-middle
         title: Carbon Minds
-        link: carbon-minds.com
-        # link_text: Project Website
+        link: https://www.carbon-minds.com/
+         link_text: carbon-minds.com
         additional_links:
            - title:  Carbon Minds on LinkedIn
              # icon: fab fa-github
@@ -71,9 +71,11 @@ content:
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+          Writing with a data science startup in the chemical industry.
         description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+          <mark>Web Copy</mark> I wrote and update the copy on the [Carbon Minds website](https://www.carbon-minds.com/) in close collaboration with the startup founders.  
+          
+          <mark>Social Media</mark> I work hand in hand with the content creation team for the [Carbon Minds LinkedIn page](https://www.linkedin.com/company/carbon-minds). I contribute scripts and storylines for [videos](https://www.linkedin.com/posts/carbon-minds_explained-in-60-seconds-supplier-specific-activity-6737659043579498496-7vCt) and [PDF slide presentations](https://www.linkedin.com/posts/carbon-minds_supplier-specific-carbon-footprints-case-activity-6745303724987609088-hl8K), [content curation posts](https://www.linkedin.com/posts/carbon-minds_chemicalrecycling-bioeconomy-ccu-activity-6758342602824699904-4y-y) and [content marketing posts](https://www.linkedin.com/posts/carbon-minds_climateimpact-carbonfootprint-supplychainintelligence-activity-6755852894219644928-F39g).
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
     content:

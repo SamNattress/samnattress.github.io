@@ -48,25 +48,25 @@ linkedin_username: sam-nattress
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  If you're working towards greater environmental sustainability, I think your message deserves to be heard.  
+  If you're working towards greater <mark>environmental sustainability</mark>, I think your message deserves to be heard.  
   
   Your offer and the ideas behind it - no matter how complex - need to be understood. And your vision must inspire action.  
   
-  So I bring to life the ideas of startups, businesses and social enterprises who are having a positive environmental impact.  
+  So I bring to life in writing the ideas of sustainability startups.  
   
  
 content:
-  - title: Projects # Title for the section
+  - title: Client Work # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: Super awesome project
-        link: github.com/sproogen
+        title: Carbon Minds
+        link: carbon-minds.com
         # link_text: Project Website
         additional_links:
-          - title:  sproogen/modern-resume-theme
-            icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
+           - title:  Carbon Minds on LinkedIn
+             # icon: fab fa-github
+             url: linkedin.com/carbon-minds
           # - title:  Github page for project (eg. sproogen/modern-resume-theme)
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)

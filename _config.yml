@@ -96,29 +96,27 @@ content:
             
             <mark>Article Writing</mark> I've written content articles for sustainability startups like the world-changing [Reforestum](https://reforestum.com/how-to-choose-between-supporting-afforestation-and-forest-conservation/), scientific communities like [The Biomimicry Institute](https://biomimicry.org/the-three-seeds-of-biomimicry-every-entrepreneur-should-know-about/) and been published on sustainability startups in Medium's most subscribed publication, The Startup [here](https://medium.com/swlh/this-burgeoning-field-can-breathe-life-into-your-sustainability-startup-ca541f50a174)[, here](https://medium.com/swlh/these-startups-have-actionable-data-for-covid-climate-and-diversity-1d880edb12af) and [again here](https://medium.com/swlh/the-next-wave-of-startups-is-coming-out-of-nature-1d5061c68b24).
             
-            <mark>Fiction and Poetry</mark> From scribbles that will never leave my notepad to [published works of flash fiction], I'm always spewing ink in pursuit of a good turn of phrase. 
+            <mark>Fiction and Poetry</mark> From scribbles that will never leave my notepad to [published works of flash fiction](https://www.thomasbrathphotography.com/1000words), I'm always spewing ink in pursuit of a good turn of phrase. 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Harvard University
-        caption: 2010 - 2013
-        sub_title: BSc Computer Science
+        title: University of Cambridge
+        caption: 2008 - 2012
+        sub_title: BA French and Italian
         quote: >
-          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+          The place where I learnt to read and write. 
         description: | # this will include new lines to allow paragraphs
-          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
-          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+          When I think back on my time at Cambridge with the perspective of almost 10 years, I realise that the most important things I learnt had little to do with language: how to listen to the slowest speakers, who quietly opened my eyes; how to study what I loved, and leave the rest in the libraby; the joy of trying to condense a greater thinker's entire opus into a 2000 word essay; the satisfaction of finding resonance in poetry other people write off as "not as good as Baudelaire"; and how the most interesting conversations often come from music students, whose job it is listen very carefully and produce something beautiful. 
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
+      When I'm not writing, I might be:
       - Rock climbing
-      - Gaming
-      - Knitting
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
-      Look at this cool image  
-      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+      - Volunteering at the dog shelter or fostering a homeless pup
+      - Reading
+      - Learning how to build things like this website
+      
 # Footer
 footer_show_references: true
 # references_title: References on request (Override references text)

@@ -75,7 +75,7 @@ content:
         description: | # this will include new lines to allow paragraphs
           <mark>Social Media</mark> I work hand in hand with the content creation team for the [Carbon Minds LinkedIn page](https://www.linkedin.com/company/carbon-minds). I contribute scripts and storylines for [videos](https://www.linkedin.com/posts/carbon-minds_explained-in-60-seconds-supplier-specific-activity-6737659043579498496-7vCt) and [PDF slide presentations](https://www.linkedin.com/posts/carbon-minds_supplier-specific-carbon-footprints-case-activity-6745303724987609088-hl8K), [content curation posts,](https://www.linkedin.com/posts/carbon-minds_chemicalrecycling-bioeconomy-ccu-activity-6758342602824699904-4y-y) and [content marketing posts](https://www.linkedin.com/posts/carbon-minds_climateimpact-carbonfootprint-supplychainintelligence-activity-6755852894219644928-F39g).  
           
-          <mark>Web Copy</mark> I wrote and update the copy on the [Carbon Minds website](https://www.carbon-minds.com/) in close collaboration with the startup founders.  
+          <mark>Web Copy</mark> I wrote and update the copy on the [Carbon Minds website](https://www.carbon-minds.com/), in close collaboration with the startup founders.  
           
           <mark>Internal Documentation</mark> When internal documentation needs to be clear and concise, I tidy it up. 
           
@@ -92,9 +92,9 @@ content:
         quote: >
           Previous work and projects that round out my copywriting skills 
         description: | # this will include new lines to allow paragraphs
-            <mark>Teaching</mark> I taught English as a foreign language for 3 years in France and 3 in Italy. Striving to eliminate the phrase "because that's just what we say" from my teaching vocabulary made me a deeper thinker, a more coherent communicator and no less of a maddeningly fastidious teacher. 
+            <mark>Article Writing</mark> I've written articles for sustainability startups like the world-changing [Reforestum](https://reforestum.com/how-to-choose-between-supporting-afforestation-and-forest-conservation/), scientific communities like [The Biomimicry Institute](https://biomimicry.org/the-three-seeds-of-biomimicry-every-entrepreneur-should-know-about/) and I've published on sustainability startups in Medium's most subscribed publication, The Startup [here](https://medium.com/swlh/this-burgeoning-field-can-breathe-life-into-your-sustainability-startup-ca541f50a174)[, here](https://medium.com/swlh/these-startups-have-actionable-data-for-covid-climate-and-diversity-1d880edb12af) and [again here](https://medium.com/swlh/the-next-wave-of-startups-is-coming-out-of-nature-1d5061c68b24).
             
-            <mark>Article Writing</mark> I've written content articles for sustainability startups like the world-changing [Reforestum](https://reforestum.com/how-to-choose-between-supporting-afforestation-and-forest-conservation/), scientific communities like [The Biomimicry Institute](https://biomimicry.org/the-three-seeds-of-biomimicry-every-entrepreneur-should-know-about/) and been published on sustainability startups in Medium's most subscribed publication, The Startup [here](https://medium.com/swlh/this-burgeoning-field-can-breathe-life-into-your-sustainability-startup-ca541f50a174)[, here](https://medium.com/swlh/these-startups-have-actionable-data-for-covid-climate-and-diversity-1d880edb12af) and [again here](https://medium.com/swlh/the-next-wave-of-startups-is-coming-out-of-nature-1d5061c68b24).
+            <mark>Teaching</mark> I taught English as a foreign language for 3 years in France and 3 in Italy. Striving to eliminate the phrase "because that's just what we say" from my teaching vocabulary made me a deeper thinker, a more coherent communicator and no less of a maddeningly fastidious teacher. 
             
             <mark>Fiction and Poetry</mark> From scribbles that will never leave my notepad to [published works of flash fiction](https://www.thomasbrathphotography.com/1000words), I'm always spewing ink in pursuit of a good turn of phrase. 
   - title: Education # Title for the section
@@ -112,7 +112,7 @@ content:
     layout: text
     content: | # this will include new lines to allow paragraphs
       When I'm not writing, I might be:
-      - Rock climbing
+      - Hiking and climbing
       - Volunteering at the dog shelter or fostering a homeless pup
       - Reading (the diet to writing's exercise)
       - Learning how to build things like this website

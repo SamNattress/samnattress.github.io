@@ -10,14 +10,17 @@
   font-family: Arial, sans-serif;
   background: #f7f7f7;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 20px;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 720px;   /* ← MASTER WIDTH (video + card both obey this) */
 }
 
 .video {
   width: 100%;
-  max-width: 720px;
   aspect-ratio: 16 / 9;
 }
 
@@ -25,16 +28,23 @@
   width: 100%;
   height: 100%;
   border-radius: 12px;
-}
-
-.card {
-  margin-top: 40px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
   display: block;
 }
 
-.card:hover {
+.card-link {
+  display: block;
+  margin-top: 32px;
+}
+
+.card-link img {
+  width: 100%;        /* ← fills container */
+  height: auto;       /* ← keeps proportions */
+  display: block;     /* ← removes inline spacing bug */
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.card-link img:hover {
   transform: scale(1.02);
 }
 </style>
@@ -42,18 +52,22 @@
 
 <body>
 
-<div class="video">
-  <iframe
-    src="https://www.youtube.com/embed/VIDEO_ID"
-    title="Intro video"
-    frameborder="0"
-    allowfullscreen>
-  </iframe>
+<div class="container">
+
+  <div class="video">
+    <iframe
+      src="https://www.youtube.com/embed/VIDEO_ID"
+      title="Intro video"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" class="card-link">
+    <img src="business-card.png" alt="Sam Nattress">
+  </a>
+
 </div>
-  
-<a href="https://www.linkedin.com/in/sam-nattress" target="_blank">
-  <img src="business-card.png" alt="Sam Nattress" class="card">
-</a>
 
 
 

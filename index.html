@@ -67,6 +67,23 @@
   height: calc(2.97% + 0.5%);
 }
 
+.email-text {
+  position: absolute;
+
+  /* Same position/size as email box */
+  left: calc(37% + 7%);
+  top: calc(39.12% + 12.8%);
+  width: calc(21.86% + 6%);
+  height: calc(2.97% + 0.5%);
+
+  display: flex;
+  align-items: center;
+
+  /* Make text invisible but selectable */
+  color: transparent;
+  user-select: text;
+  cursor: text;
+}
   
 </style>
 </head>
@@ -96,6 +113,10 @@
   <!-- Email clickable area -->
   <a href="mailto:nattress.sam@gmail.com"
      class="click email"></a>
+
+  
+  <!-- Selectable Email Text -->
+  <div class="email-text">nattress.sam@gmail.com</div>
 
 </div>
 

@@ -31,22 +31,40 @@
   display: block;
 }
 
-.card-link {
-  display: block;
+.card-container {
+  position: relative;
+  width: 100%;
   margin-top: 32px;
 }
 
-.card-link img {
-  width: 100%;        /* ← fills container */
-  height: auto;       /* ← keeps proportions */
-  display: block;     /* ← removes inline spacing bug */
+.card {
+  width: 100%;
+  height: auto;
+  display: block;
   border-radius: 12px;
-  transition: transform 0.2s ease;
 }
 
-.card-link img:hover {
-  transform: scale(1.02);
+/* Invisible clickable areas */
+.click {
+  position: absolute;
 }
+
+/* Adjust these to match card layout */
+.linkedin {
+  bottom: 60px;
+  left: 40px;
+  width: 200px;
+  height: 30px;
+}
+
+.email {
+  bottom: 30px;
+  left: 40px;
+  width: 200px;
+  height: 30px;
+}
+
+  
 </style>
 </head>
 
@@ -63,9 +81,20 @@
     </iframe>
   </div>
 
-  <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" class="card-link">
-    <img src="business-card.png" alt="Sam Nattress">
-  </a>
+  <div class="card-container">
+
+  <img src="business-card.png" alt="Sam Nattress" class="card">
+
+  <!-- LinkedIn clickable area -->
+  <a href="https://www.linkedin.com/in/YOUR-LINKEDIN"
+     class="click linkedin"
+     target="_blank"></a>
+
+  <!-- Email clickable area -->
+  <a href="mailto:you@email.com"
+     class="click email"></a>
+
+</div>
 
 </div>
 

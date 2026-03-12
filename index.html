@@ -3,172 +3,231 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Sam Nattress</title>
+
 <style>
-  body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f7f7f7;
-  display: flex;
-  justify-content: center;
-  padding: 40px 16px;
+
+body{
+margin:0;
+font-family: Arial, sans-serif;
+background:#f3f3f3;
+display:flex;
+justify-content:center;
+padding:40px 16px;
 }
 
-.container {
-  width: 100%;
-  max-width: 720px;   /* ← MASTER WIDTH (video + card both obey this) */
+.container{
+width:100%;
+max-width:720px;
 }
 
-.video {
-  width: 100%;
-  aspect-ratio: 16 / 9;
+/* ---------------- VIDEO ---------------- */
+
+.video{
+width:100%;
+aspect-ratio:16/9;
+margin-bottom:40px;
 }
 
-.video iframe {
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-  display: block;
+.video iframe{
+width:100%;
+height:100%;
+border-radius:12px;
+border:none;
 }
 
-.card-container {
-  position: relative;
-  width: 100%;
-  max-width: 720px;   /* same as video */
-  margin: 0 auto;
+/* ---------------- CARD ---------------- */
+
+.card{
+
+background:#eeeeee;
+border-radius:12px;
+padding:40px;
+position:relative;
+overflow:hidden;
 }
 
-.card {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 12px;
+.card-grid{
+
+display:grid;
+grid-template-columns:200px 1fr;
+gap:40px;
+align-items:center;
+
 }
 
-/* Invisible clickable areas */
-.click {
-  position: absolute;
+/* headshot */
+
+.headshot{
+
+width:200px;
+height:200px;
+border-radius:50%;
+overflow:hidden;
+background:#ddd;
 }
 
-/* Adjust these to match card layout */
-.linkedin {
-  position: absolute;
-  left: calc(37% + 7%);
-  top: calc(44% + 14.5%);
-  width: calc(9.99% + 3%);
-  height: 4.54%;
+.headshot img{
+
+width:100%;
+height:100%;
+object-fit:cover;
+
 }
 
-.email {
-  position: absolute;
-  left: calc(37% + 7%);
-  top: calc(39.12% + 12.8%);
-  width: calc(21.86% + 6%);
-  height: calc(2.97% + 0.5%);
+/* name */
+
+.name{
+
+font-size:36px;
+font-weight:700;
+letter-spacing:1px;
+margin-bottom:10px;
+
 }
 
-.email-text {
-  color: transparent;     /* hides duplicate text */
-  user-select: text;      /* allows copying */
-  cursor: text;
+.tagline{
+
+font-size:22px;
+color:#444;
+margin-bottom:30px;
+
 }
 
-#copyMessage {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+/* contact section */
 
-  background: rgba(0,0,0,0.85);
-  color: white;
-  font-size: 14px;
-  padding: 8px 14px;
-  border-radius: 6px;
+.contact-title{
 
-  opacity: 0;
-  pointer-events: none;
+font-weight:700;
+margin-bottom:10px;
 
-  transition: opacity 0.25s ease;
-  z-index: 10;
 }
 
-#copyMessage.show {
-  opacity: 1;
+.contact-item{
+
+display:flex;
+align-items:center;
+gap:10px;
+margin-bottom:12px;
+font-size:18px;
+
 }
 
-  .email:hover::after {
-  content: "Click to copy email";
-  position: absolute;
-  top: -28px;
-  left: 0;
+.contact-item a{
 
-  font-size: 12px;
-  background: #222;
-  color: white;
-  padding: 4px 6px;
-  border-radius: 4px;
+text-decoration:none;
+color:#333;
+
 }
-  
+
+.contact-item a:hover{
+
+text-decoration:underline;
+
+}
+
+/* mountains */
+
+.mountains{
+
+position:absolute;
+bottom:0;
+right:0;
+width:260px;
+opacity:0.9;
+
+}
+
+/* responsive */
+
+@media(max-width:650px){
+
+.card-grid{
+
+grid-template-columns:1fr;
+text-align:center;
+
+}
+
+.headshot{
+
+margin:auto;
+
+}
+
+.mountains{
+
+width:200px;
+
+}
+
+}
+
 </style>
 </head>
 
-<script>
-function copyEmail(event) {
 
-  const email = "nattress.sam@gmail.com";
-
-  if (event.ctrlKey || event.metaKey) {
-    window.location.href = "mailto:" + email;
-    return;
-  }
-
-  navigator.clipboard.writeText(email);
-
-  const msg = document.getElementById("copyMessage");
-
-  msg.classList.add("show");
-
-  setTimeout(() => {
-    msg.classList.remove("show");
-  }, 1500);
-
-}
-</script>
-  
 <body>
 
 <div class="container">
 
-  <div class="video">
-    <iframe
-      src="https://www.youtube.com/embed/VIDEO_ID"
-      title="Intro video"
-      frameborder="0"
-      allowfullscreen>
-    </iframe>
-  </div>
+<!-- VIDEO -->
 
-  <div class="card-container">
+<div class="video">
 
-  <img src="business-card.png" alt="Sam Nattress" class="card">
-
-  <!-- LinkedIn clickable area -->
-  <a href="https://www.linkedin.com/in/sam-nattress"
-     class="click linkedin"
-     target="_blank"></a>
-
-  <!-- Email clickable area -->
-  <div class="click email" onclick="copyEmail(event)"></div>
-
-  
-  <!-- Copy confirmation -->
-  <div id="copyMessage">Email copied</div>
-
-</div>
+<iframe
+src="https://www.youtube.com/embed/VIDEO_ID"
+allowfullscreen>
+</iframe>
 
 </div>
 
 
+<!-- CARD -->
+
+<div class="card">
+
+<div class="card-grid">
+
+<div class="headshot">
+
+<img src="headshot.jpg" alt="Sam Nattress">
+
+</div>
+
+
+<div>
+
+<div class="name">SAM NATTRESS</div>
+
+<div class="tagline">Growth Marketing / Sustainability</div>
+
+<div class="contact-title">Get in touch:</div>
+
+<div class="contact-item">
+📧
+<a href="mailto:nattress.sam@gmail.com">
+nattress.sam@gmail.com
+</a>
+</div>
+
+<div class="contact-item">
+🔗
+<a href="https://www.linkedin.com/in/sam-nattress" target="_blank">
+LinkedIn
+</a>
+</div>
+
+</div>
+
+</div>
+
+<img src="mountains.png" class="mountains">
+
+</div>
+
+</div>
 
 </body>
 </html>

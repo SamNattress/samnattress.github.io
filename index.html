@@ -72,23 +72,60 @@
   user-select: text;      /* allows copying */
   cursor: text;
 }
+
+  #copyMessage {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+
+  background: #222;
+  color: white;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 6px;
+
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+  #copyMessage.show {
+  opacity: 1;
+}
+
+  .email:hover::after {
+  content: "Click to copy email";
+  position: absolute;
+  top: -28px;
+  left: 0;
+
+  font-size: 12px;
+  background: #222;
+  color: white;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
   
 </style>
 </head>
 
 <script>
-function openEmail() {
-  window.location.href = "mailto:nattress.sam@gmail.com";
-}
-</script>
+function copyEmail(event) {
 
-  <script>
-function handleEmailClick() {
-  const selection = window.getSelection().toString();
-  
-  if (selection.length === 0) {
-    window.location.href = "mailto:nattress.sam@gmail.com";
+  const email = "nattress.sam@gmail.com";
+
+  if (event.ctrlKey || event.metaKey) {
+    window.location.href = "mailto:" + email;
+    return;
   }
+
+  navigator.clipboard.writeText(email);
+
+  const msg = document.getElementById("copyMessage");
+  msg.classList.add("show");
+
+  setTimeout(() => {
+    msg.classList.remove("show");
+  }, 1500);
 }
 </script>
   
@@ -115,9 +152,7 @@ function handleEmailClick() {
      target="_blank"></a>
 
   <!-- Email clickable area -->
-  <div class="click email" onmouseup="handleEmailClick()">
-    <span class="email-text">nattress.sam@gmail.com</span>
-  </div>
+  <div class="click email" onclick="copyEmail(event)"></div>
 
   
 

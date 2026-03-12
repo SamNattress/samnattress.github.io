@@ -68,20 +68,21 @@
 }
 
 .email-text {
-  position: absolute;
-  inset: 0;
-
-  display: flex;
-  align-items: center;
-
-  color: transparent;      /* hides duplicate text */
-  user-select: text;       /* allows copying */
+  color: transparent;     /* hides duplicate text */
+  user-select: text;      /* allows copying */
   cursor: text;
 }
   
 </style>
 </head>
 
+<script>
+function openEmail() {
+  window.location.href = "mailto:nattress.sam@gmail.com";
+}
+</script>
+
+  
 <body>
 
 <div class="container">
@@ -105,9 +106,9 @@
      target="_blank"></a>
 
   <!-- Email clickable area -->
-  <a href="mailto:you@email.com" class="click email">
+  <div class="click email" onclick="openEmail()">
     <span class="email-text">nattress.sam@gmail.com</span>
-  </a>
+  </div>
 
   
 

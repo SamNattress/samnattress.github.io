@@ -82,6 +82,15 @@ function openEmail() {
 }
 </script>
 
+  <script>
+function handleEmailClick() {
+  const selection = window.getSelection().toString();
+  
+  if (selection.length === 0) {
+    window.location.href = "mailto:nattress.sam@gmail.com";
+  }
+}
+</script>
   
 <body>
 
@@ -106,7 +115,7 @@ function openEmail() {
      target="_blank"></a>
 
   <!-- Email clickable area -->
-  <div class="click email" onclick="openEmail()">
+  <div class="click email" onmouseup="handleEmailClick()">
     <span class="email-text">nattress.sam@gmail.com</span>
   </div>
 
